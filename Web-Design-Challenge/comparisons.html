@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source Code Pro" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <section class="container-fluid px-5 py-5">
+        <!-- Top Bar-->
+        <div id="topbar" class="d-none d-flex align-items-right fixed-top">
+            <div class="p-2 container d-flex">
+                <div class="contact-info mr-auto">
+                    <i class="fas fa-envelope-square"></i> <a
+                        href="mailto:muratcagrikoc@gmail.com">muratcagrikoc@gmail.com</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="github"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- HEADER Navbar-->
+        <header id="header" class="fixed-top">
+            <nav class="navbar navbar-expand-sm navbar-light bg-white">
+                <a class="navbar-brand text-uppercase" href="index.html">Latitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plots
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="max-temperature.html">Max Temperature</a>
+                                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="wind-speed.html">Wind Speed</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparisons.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- Cards -->
+    <div class="card col-lg-12 col-sm-12">
+        <div class="card-header">
+            <h3 class="card-title">Comparison: Latitude vs X</h3>
+            <hr class="card-liner" />
+            <div class="card-body">
+                <p>Click any plot to get an in-dept-analysis</p>
+                <div class="row">
+                    <div class="card-header">
+                        <h4 class="card-title">vs Max Temperature</h4>
+                        <a class="col-sm-3 col-lg-6 p-1" href="max-temperature.html">
+                            <img class="card-img" src="visuals/max-temp.png" alt="Latitude vs. Max Temp"></a>
+                    </div>
+                    <div class="card-header">
+                        <h4 class="card-title">vs Humidity</h4>
+                        <a class="col-sm-3 col-lg-6 p-1" href="humidity.html">
+                            <img class="card-img" src="visuals/humidity.png" alt="Latitude vs. Humidity"></a>
+                    </div>
+                    <div class="card-header">
+                        <h4 class="card-title">vs Cloudiness</h4>
+                        <a class="col-sm-3 col-lg-6 p-1" href="cloudiness.html">
+
+                            <img class="card-img" src="visuals/cloudiness.png" alt="Latitude vs. Cloudiness"></a>
+                    </div>
+                    <div class="card-header">
+                        <h4 class="card-title">vs Wind speed</h4>
+                        <a class="col-sm-3 col-lg-6 p-1" href="wind-speed.html">
+                            <img class="card-img" src="visuals/wind-speed.png" alt="Latitude vs. Wind Speed"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    <!-- End Cards-->
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container py-4">
+            <div class="copyright">&copy; 2020 Copyright <strong><span>Murat Koc</span></strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+</body>
+
+</html>
